@@ -387,7 +387,7 @@ function R(){
         const open=xpand===id;
         const tw=gW(id);
         html+=`
-          <div class="ex${done?" done"}">
+          <div class="ex${done?" done":""}">
             <div class="exh" onclick="xpand=xpand==='${id}'?null:'${id}';R()">
               <div><span class="enum">${i+1}</span><span class="exn">${e.n}</span>${done?'<span style="color:#00e676;margin-left:8px;font-weight:700">✓</span>':''}</div>
               <span style="color:#8af;font-size:18px">${open?"▾":"▸"}</span>
